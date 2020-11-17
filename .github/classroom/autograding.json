@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "Compile",
+      "setup": "",
+      "run": "bash .scripts/.exam_compile.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 0
+    },
+    {
+      "name": "Running Logging Test 1",
+      "setup": "",
+      "run": "bash .scripts/.exam_log_console.sh 'WARN Walnuts?' 'Walnuts?'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Running Logging Test 2",
+      "setup": "",
+      "run": "bash .scripts/.exam_log_console.sh 'FATAL Flan.' 'Flan.'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Running Logging Test 3",
+      "setup": "",
+      "run": "bash .scripts/.exam_log_console.sh 'DEBUG Danish.' ''",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Running Logging Test 4",
+      "setup": "",
+      "run": "bash .scripts/.exam_log_file.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "Running Cookie Test 1",
+      "setup": "",
+      "run": "bash .scripts/.exam_test_cookie.sh 'ONLY_VALID123' 'ONLY_VALID123'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Running Cookie Test 2",
+      "setup": "",
+      "run": "bash .scripts/.exam_test_cookie.sh 'Hello, world!' 'Hello, world!'",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Running Cookie Test 3",
+      "setup": "",
+      "run": "bash .scripts/.exam_test_cookie.sh 'Here is <strong>bold</strong> &amp; <em>italic</em> text.' 'Here is &lt;strong&gt;bold&lt;/strong&gt; &amp;amp; &lt;em&gt;italic&lt;/em&gt; text.'",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Running Cookie Test 4",
+      "setup": "",
+      "run": "export LANG=C.UTF-8; bash .scripts/.exam_test_cookie.sh '© Copyright 2020' '&copy; Copyright 2020'",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Running Cookie Test 5",
+      "setup": "",
+      "run": "bash .scripts/.exam_test_date.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
