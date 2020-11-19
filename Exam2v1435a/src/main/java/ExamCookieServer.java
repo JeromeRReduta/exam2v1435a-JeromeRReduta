@@ -36,10 +36,7 @@ public class ExamCookieServer {
    * @return the safe, decoded cookie value 
    */
   public static String getSafeValue(Cookie cookie) {
-	  System.out.println("Bubba");
-    // TODO Modify this method implementation to return the correct output.
-    // TODO The implementation should be no more than 5 lines of code.
-     return null;
+	  return StringEscapeUtils.escapeHtml4(URLDecoder.decode(cookie.getValue()));
   }
   
   /*
