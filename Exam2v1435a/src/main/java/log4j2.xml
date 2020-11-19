@@ -1,0 +1,29 @@
+<Configuration status = "warn">
+	<Appenders>
+		<Console name = "Console" target = "SYSTEM_OUT" ignoreExceptions = "true" >
+			<PatternLayout pattern = "%message %xEx{none} %n" />
+		</Console>
+		<File name = "LogFile" fileName = "debug.log" append = "false">
+			<PatternLayout pattern = "%file:%line: %m %xEx{3}%n" />
+		</File>
+		
+	
+	</Appenders>
+	<Loggers>
+	
+		<Logger name = "ExamLoggerSetup" level = "ALL" additivity = "false">
+			<AppenderRef ref = "Console" level = "WARN" />
+			<AppenderRef ref = "LogFile" level = "ALL" />
+			
+		</Logger>
+		<Root level = "ALL">
+			<AppenderRef ref = "Console" level = "ALL"/>
+		</Root>
+	</Loggers>
+
+
+
+
+
+
+</Configuration>
