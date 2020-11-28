@@ -7,7 +7,7 @@
 			<PatternLayout pattern="%m%ex{none}%n"></PatternLayout>
 		</Console>
 		<File name="logFile" fileName="debug.log" append="false">
-			<PatternLayout pattern="[%level{lowerCase=true}] %file:%line %m %ex{2}%n"></PatternLayout>
+			<PatternLayout pattern="%level %file:%line %m %ex{2}%n"></PatternLayout>
 		</File>
 	</Appenders>
 	<Loggers>
